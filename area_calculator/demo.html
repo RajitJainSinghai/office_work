@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="button" id="btn1" class="jsBtn" value="button1"/>
+<input type="button" id="btn2" class="jsBtn" value="button2"/>
+    <script>
+        var x = document.getElementsByClassName('jsBtn');
+        for(var i=0; i<x.length; i++){
+            x[i].addEventListener("click", function(){ 
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                            } else {
+                      x.style.display = "block";
+                    }
+             })
+        }
+        </script>
+</body>
+</html>
