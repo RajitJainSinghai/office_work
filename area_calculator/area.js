@@ -12,7 +12,7 @@ function myFunction() {
     var textValue2 = document.getElementById('input2').value;
 
     document.getElementById('output').value = textValue1 * textValue2;
-    
+    result();
 }
 
 
@@ -28,9 +28,8 @@ function myFunction() {
   function calc1() {
     var textValue3 = document.getElementById('input3').value;
     var textValue4 = document.getElementById('input4').value;
-
     document.getElementById('output1').value = textValue3 * textValue4;
-    
+    result();
 }
 
 function myFunction2() {
@@ -44,15 +43,17 @@ function myFunction2() {
   function calc2() {
   var textValue5 = document.getElementById('input5').value;
   var textValue6 = document.getElementById('input6').value;
-
   document.getElementById('output2').value = textValue5 * textValue6;
-  
+ result();
 }
+
 function result() {
-  var x = document.getElementById('output').value;
-  console.log(x);
+  let x = document.getElementById('output').value;
+
   let y = document.getElementById('output1').value;
   let z = document.getElementById('output2').value;
-  let a = x+y+z;
-  document.getElementById('result').value = a;
+  // console.log(x+y+z);
+  let a = Number(x) + Number(y) + Number(z);
+  
+  document.getElementById("result").value = a;
 }
