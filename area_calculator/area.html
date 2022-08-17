@@ -1,25 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./area.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./area.css">
+        <title>Area_calculator </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-    <section>
+    <button id="myBtn">Area_calculator</button>
 
-   
-<button id="utensil" onclick="myFunction()">KITCHEN</button>
-<div id="myDIV">
+<!-- The Modal -->
+<!-- <span class="close">&times;</span> -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    
+
+<div id="show"><input class="heading_button" type="button" value="Kitchen"></div>
+<!-- <div id="show2"><input class="heading_button" type="button" value="dining"></div> -->
+ <div class="menu" style="display: none;">
+
+ <div id="myDIV">
     <ul class="menus_ul">
 <li class="menus">
     <input type="text" name="input1" id="input1" onkeyup="calc()" value="" placeholder="Length">
@@ -27,7 +33,7 @@
 </li>
 <p id="text_x">X</p>
 <li class="menus">
-    <input type="text" name="input2" id="input2" onkeyup="calc()" value="" placeholder="Width"> <a href="javascript: void(0)" onClick="calc()"></a>
+    <input type="text" name="input2" id="input2" onkeyup="calc()" value="" placeholder="Width"> <a href="javascript: void(0)" onClick="calc2()"></a>
     <p id="text_m">m</p>
 </li>
 <p id="text_x">=</p>
@@ -38,9 +44,11 @@
 
 </ul>
 </div>
+</div>
 
-<button id="utensil" onclick="myFunction1()">BEDROOM</button>
-<div id="myDIV1">
+ <div id="show1"><input class="heading_button" type="button" value="bedroom"></div>
+ <div class="menu1" style="display: none;">
+ <div id="myDIV1">
     <ul class="menus_ul">
 <li class="menus">
     <input type="text" name="input1" id="input3" onkeyup="calc1()" value="" placeholder="Length">
@@ -59,9 +67,12 @@
 
 </ul>
 </div>
+</div>
 
-<button id="utensil" onclick="myFunction2()">KITCHEN</button>
-<div id="myDIV2">
+ <div id="show2"><input class="heading_button" type="button" value="dining"></div>
+ <div class="menu2" style="display: none;">
+
+ <div id="myDIV2">
     <ul class="menus_ul">
 <li class="menus">
     <input type="text" name="input1" id="input5" onkeyup="calc2()" value="" placeholder="Length">
@@ -80,9 +91,17 @@
 
 </ul>
 </div>
+</div>
 <input type="text" value="" id="result" type="text" name="result" placeholder="result">
-</section>
+
+  </div>
+</div>
 
 <script src="./area.js"></script>
+
+
+</body>
+</html>
+    
 </body>
 </html>
