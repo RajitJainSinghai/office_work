@@ -1,14 +1,17 @@
 input.heading_button {
-    width: 50%;
-    font-size: 16px;
-    text-transform: uppercase;
-
+  width: 90%;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: 0;
+  margin: 5px 26px;
+  border-radius: 10px;
 }
 
 ul.menus_ul {
     list-style-type: none;
     display: flex;
-    width: 100%;
+    width: 90%;
     margin: 5px auto;
     align-items: flex-start;
     justify-content: flex-start;
@@ -17,7 +20,7 @@ li.menus {
     display: flex;
     align-items: center;
 }
-input#input1,input#input2,input#output,input#input3,input#input4,input#output1,input#input5,input#input6,input#output2 
+input#input1,input#input2,input#output0,input#input3,input#input4,input#output1,input#input5,input#input6,input#output2,input#input7,input#input8,input#output3,input#input9,input#input10,input#output4,input#input11,input#input12,input#output5
  {
     padding: 5px 0 5px 10px;
     font-size: 18px;
@@ -50,19 +53,25 @@ p#text_m {
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #dfdfdf;
   margin: auto;
   padding: 20px;
+  height: 400px;
+  overflow: auto;
   border: 1px solid #888;
-  width: 80%;
+  width: 500px;
+  position: relative;
 }
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+  position: absolute;
+  color: #1a1a1aab;
+  top: 0;
+  font-size: 35px;
+  font-weight: 100;
+  right: 0px;
+
 }
 
 .close:hover,
@@ -72,3 +81,97 @@ p#text_m {
   cursor: pointer;
 }
 
+input#result {
+  background-color: #dfdfdf;
+  width: 65%;
+  padding: 10px 20px;
+  font-size: 20px;
+  margin: 5px 0;
+  border-radius: 10px;
+  border: 0;
+}
+div#total_area_calculator {
+  display: flex;
+  align-items: center;
+}
+p#total_area {
+  font-size: 25px;
+  font-weight: 600;
+  color: #00000096;
+}
+
+/****************** Calci******************/
+ul.area_container {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid #8080803b;
+
+
+}
+.area {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  width: 450px;
+  height: 170px;
+  padding: 20px;
+  background: #80808033;
+
+}
+#flatter {
+  width: 50px;
+  padding: 10px 0 10px 35px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0;
+  background: #f0f0f0;
+}
+li.area_container_flater {
+  display: flex;
+  width: 210px;
+  justify-content: space-between;
+}
+img#calci_icon {
+  width: 30px;
+}
+button.Area_calculator_popupButton {
+  width: 180px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  justify-content: space-around;
+  border-radius: 10px;
+  border: 0;
+  padding: 10px;
+  color: grey;
+}
+p#area_heading {
+  font-size: 17px;
+  color: grey;
+}
+
+.area_total {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: #4c4c4c;
+  
+
+}
+h3#area_prices_h3,h3#area_h3 {
+  font-size: 25px;
+  margin: 12px 0px;
+}
+p#area_p,p#area_prices_p {
+  margin: 0;
+  font-size: 20px;
+}
+h1#heading_area {
+  text-align: center;
+  font-size: 35px;
+}

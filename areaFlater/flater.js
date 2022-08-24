@@ -11,8 +11,8 @@ function flater() {
     else {
         y1 = x/pack;
         y = Math.ceil(y1);
-        document.getElementById("pack").value = y+" pack";
+        document.getElementById("pack").innerText = y+" pack";
     }
     var z = y * packPrice;
-    document.getElementById("result").value = "$ "+z; 
+    document.getElementById("result").innerText = "$ "+z; 
 }

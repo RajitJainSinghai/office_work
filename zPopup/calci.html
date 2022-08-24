@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./calci.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="area">
-        <ul class="area_container">
-            <li class="area_container_flater">
-        <!-- <input id="flater" type="number" onkeyup="flater()" value="1" > -->
-        <p id="area_heading">Square meters</p>
-    </li>
-    <li class="Area_calculator">
-        <button class="Area_calculator_popupButton"><img id="calci_icon" src="./img/calci_icon.png" alt="">Area Calculator</button>
-    </li>
-    </ul>
-    <div class="area_total">
-        <div class="area_total_packs">
-            <h3 id="area_h3">Total : </h3>
-            <p id="area_p">7 Packs (1.99 m2 per pack)</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./calci.css" />
+    <link rel="stylesheet" href="../area_calculator/area.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="area">
+      <ul class="area_container">
+        <li class="area_container_flater">
+          <input id="flatter" type="number" onkeyup="flater()" value="1" />
+          <p id="area_heading">Square meters</p>
+        </li>
+        <li class="Area_calculator">
+          <button id="myBtn" class="Area_calculator_popupButton">
+            <img id="calci_icon" src="./img/calci_icon.png" alt="" />Area
+            Calculator
+          </button>
+        </li>
+      </ul>
+      <div class="area_total">
+        <div class="area_total_packs">
+          <h3 id="area_h3">Total :</h3>
+          <p id="area_p">7 Packs (1.99 m2 per pack)</p>
         </div>
         <div class="area_total_prices">
-            <h3 id="area_prices_h3"> $ 365</h3>
-            <p id="area_prices_p">$55.76 / Pack</p>
-
+          <h3 id="area_prices_h3">$ 365</h3>
+          <p id="area_prices_p">$55.76 / Pack</p>
         </div>
-
-    </div>
+      </div>
     </div>
     <script src="./calci.js"></script>
-</body>
+    <script src="../area_calculator/area.js"></script>
+
+
+
+   
+  </body>
 </html>

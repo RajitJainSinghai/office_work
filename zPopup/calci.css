@@ -20,9 +20,9 @@ ul.area_container {
     background: #80808033;
 
   }
-  #flater {
-    width: 60px;
-    padding: 10px 0 10px 45px;
+  #flatter {
+    width: 50px;
+    padding: 10px 0 10px 35px;
     font-size: 20px;
     border-radius: 10px;
     border: 0;
@@ -62,6 +62,7 @@ p#area_heading {
 }
 h3#area_prices_h3,h3#area_h3 {
     font-size: 25px;
+    margin: 12px 0px;
 }
 p#area_p,p#area_prices_p {
     margin: 0;
