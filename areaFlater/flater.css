@@ -1,0 +1,18 @@
+/* var pack = 1.99;
+var packPrice = 55.76;
+var y1 = 0;
+var y = 0;
+var z = 0;
+function flater() {
+    var x = document.getElementById("flatter").value;
+    console.log(x);
+    while (x!= 0) {
+       y1= x / pack;
+        y = Math.ceil(y1);
+        document.getElementById("pack").value = y+" pack";
+        
+    }
+    z = y * packPrice;
+    document.getElementById("result").value = "$ "+z;
+   
+} */

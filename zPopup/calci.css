@@ -1,0 +1,69 @@
+ul.area_container {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #8080803b;
+
+
+}
+.area {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    width: 450px;
+    height: 170px;
+    padding: 20px;
+    background: #80808033;
+
+  }
+  #flater {
+    width: 60px;
+    padding: 10px 0 10px 45px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 0;
+    background: #f0f0f0;
+}
+li.area_container_flater {
+    display: flex;
+    width: 210px;
+    justify-content: space-between;
+}
+img#calci_icon {
+    width: 30px;
+}
+button.Area_calculator_popupButton {
+    width: 180px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    justify-content: space-around;
+    border-radius: 10px;
+    border: 0;
+    padding: 10px;
+    color: grey;
+}
+p#area_heading {
+    font-size: 17px;
+    color: grey;
+}
+
+.area_total {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #4c4c4c;
+    
+
+}
+h3#area_prices_h3,h3#area_h3 {
+    font-size: 25px;
+}
+p#area_p,p#area_prices_p {
+    margin: 0;
+    font-size: 20px;
+}
